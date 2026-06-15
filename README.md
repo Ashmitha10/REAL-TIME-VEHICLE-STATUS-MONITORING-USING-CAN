@@ -19,6 +19,9 @@ To design and implement a real-time vehicle monitoring system using CAN (Control
 
 The system consists of three nodes connected through a CAN bus:
 
+<img width="1195" height="896" alt="image" src="https://github.com/user-attachments/assets/1380db90-ace1-42ac-8e64-10970b34e1d3" />
+
+
 ### 1️⃣ Main Node
 - Reads accelerometer data.
 - Detects accident conditions.
