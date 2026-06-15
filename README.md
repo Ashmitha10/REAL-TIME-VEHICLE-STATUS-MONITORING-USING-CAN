@@ -15,7 +15,7 @@ To design and implement a real-time vehicle monitoring system using CAN (Control
 - 🚦 Indicator Status
 - 💥 Airbag Activation Status
 
-  ---------------------------------------------------
+---------------------------------------------------
 
 ## 🏗️ System Architecture
 The system consists of three nodes connected through a CAN bus:
@@ -23,29 +23,28 @@ The system consists of three nodes connected through a CAN bus:
 <img width="1195" height="896" alt="image" src="https://github.com/user-attachments/assets/1380db90-ace1-42ac-8e64-10970b34e1d3" />
 
 
-### 1️⃣ Main Node
+## 1️⃣ Main Node
+
+This node is responsible for displaying vehicle status.
 - Displays fuel percentage on LCD
 - Displays airbag status
 - Sends indicator signals to indicator node
 - Receives fuel information from fuel node
 - Reads accelerometer data for accident detection
 
-### 2️⃣ Fuel Node
+## 2️⃣ Fuel Node
+
+This node is responsible for fuel monitoring.
 - Reads fuel sensor data using ADC.
-- Calculates fuel percentage.
+- Calculates ADC value into fuel percentage.
 - Sends fuel information to Main Node via CAN.
 
-### 3️⃣ Indicator Node
+## 3️⃣ Indicator Node
+
+This node is responsible for vehicle indications(left indicator/right indicator)
 - Receives CAN messages from Main Node.
 - Controls left and right indicator LEDs.
-
-## ✨ Features
-- Real-time fuel monitoring
-- Accident detection using accelerometer
-- Airbag status indication
-- CAN-based communication
-- Interrupt-driven indicator control
-- LCD display of vehicle parameters
+--------------------------------------------------------
 
 ## 🛠️ Hardware Requirements
 - LPC2129 Microcontroller
@@ -56,11 +55,25 @@ The system consists of three nodes connected through a CAN bus:
 - LEDs
 - Switches
 - USB-to-UART Converter
+  
+--------------------------------------------------------
 
 ## 💻 Software Requirements
+
 - Embedded C
 - Keil uVision
 - Flash Magic
+  
+--------------------------------------------------------
+
+## ✨ Features
+- Real-time fuel monitoring
+- Accident detection using accelerometer
+- Airbag status indication
+- CAN-based communication
+- Interrupt-driven indicator control
+- LCD display of vehicle parameters
+
 
 ## 🚘 Applications
 - Vehicle Safety Systems
