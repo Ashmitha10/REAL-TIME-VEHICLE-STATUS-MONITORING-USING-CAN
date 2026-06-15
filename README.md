@@ -23,11 +23,11 @@ The system consists of three nodes connected through a CAN bus:
 
 
 ### 1️⃣ Main Node
-- Reads accelerometer data.
-- Detects accident conditions.
-- Displays airbag deployment status.
-- Receives fuel percentage from Fuel Node.
-- Sends indicator control signals to Indicator Node.
+- Displays fuel percentage on LCD
+- Displays airbag status
+- Sends indicator signals to indicator node
+- Receives fuel information from fuel node
+- Reads accelerometer data for accident detection
 
 ### 2️⃣ Fuel Node
 - Reads fuel sensor data using ADC.
