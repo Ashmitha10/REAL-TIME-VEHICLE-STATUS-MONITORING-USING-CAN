@@ -1,15 +1,19 @@
 # 🚗 Real-Time Vehicle Status Monitoring Using CAN
 
---------------------------------------------------
 ## 📌 Project Overview
---------------------------------------------------
+
 This project implements a Real-Time Vehicle Status Monitoring System using the Controller Area Network (CAN) protocol. The system continuously monitors important vehicle parameters such as fuel level, indicator status, and airbag deployment status, and displays them on an LCD dashboard.
 
 The project demonstrates how different vehicle subsystems communicate through CAN bus to share information efficiently.All nodes communicate through the CAN bus, enabling real-time data exchange.
 
 --------------------------------------------------
 🎯 AIM
-To develop a Real-Time Vehicle Status Monitoring System using CAN protocol for monitoring fuel level, indicator status, and airbag deployment status, thereby improving vehicle safety and communication.
+
+To design and implement a real-time vehicle monitoring system using CAN protocol that displays important vehicle parameters such as:
+
+. Fuel percentage
+. Indicator status
+. Airbag activation
 --------------------------------------------------
 1. Real-time Fuel Level Monitoring
 2. Airbag Deployment Detection
