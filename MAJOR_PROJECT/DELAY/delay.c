@@ -1,8 +1,5 @@
-//include function declarations of delay functions
 #include"delay.h"
-//include datatype definitions
 #include"types.h"
-//function to generate delay in microseconds
 void delay_us(u32 tdly){
 //multiply by 12 (approx clock cycles needed for 1 microsecond
 //if processor clock is 12MHZ)
