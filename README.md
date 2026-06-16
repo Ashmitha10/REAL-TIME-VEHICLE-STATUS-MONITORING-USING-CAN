@@ -142,7 +142,24 @@ The LCD dashboard displays:
 - Left/Right indicator status
 - Airbag activation status
 
----
+# 🔌 Overall Hardware Connection
+
+https://raw.githubusercontent.com/karthikvinti/Can_images/main/All%20three%20nodes.jpeg
+
+## LCD Display
+
+<img width="1600" height="931" alt="WhatsApp Image 2026-06-16 at 2 03 55 PM" src="https://github.com/user-attachments/assets/93e7baaf-3cf6-4609-8d47-fadecee95ae8" />
+
+
+🔕 When No Accident Occurs
+
+https://raw.githubusercontent.com/karthikvinti/Can_images/main/can%20off.jpeg
+
+🔔 When Accident Occurs
+
+https://raw.githubusercontent.com/karthikvinti/Can_images/main/can%20on.jpeg
+
+-----------------------------------------------------------------
 
 ## ✨ Features
 - Real-time fuel monitoring
