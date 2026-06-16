@@ -154,10 +154,12 @@ The LCD dashboard displays:
 <img width="1600" height="931" alt="WhatsApp Image 2026-06-16 at 2 03 55 PM" src="https://github.com/user-attachments/assets/93e7baaf-3cf6-4609-8d47-fadecee95ae8" />
 
 
+
 🔕 When No Accident Occurs
 
 
 <img width="1600" height="1200" alt="image" src="https://github.com/user-attachments/assets/b67fb3ae-2f74-439d-a469-30f2c6dc7fe0" />
+
 
 
 🔔 When Accident Occurs
@@ -209,7 +211,7 @@ The system improves:
 
 # 👨‍💻 Author
 
-# Korra Ashmitha
+Korra Ashmitha<br>
 Electronics and Communication Engineering  
 Developer of Real-Time Vehicle Status Monitoring Using CAN
 
