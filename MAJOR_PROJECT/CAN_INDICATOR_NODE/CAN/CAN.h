@@ -27,15 +27,28 @@ typedef struct CAN_Frame
 
 // Function to initialize CAN1 peripheral
 void Init_CAN1(void);
+// Function to transmit CAN frame
 void CAN1_Tx(CANF);
+// Function to receive CAN frame
 u8 CAN1_Rx(CANF *);
 
+// Function for left indication operation
 void left_indication(void);
+
+// Function for right indication operation
 void right_indication(void);
 
+// Function to turn OFF all LEDs
 void led_off(void);
+
+// Function to initialize LEDs
 void Init_LED(void);
+
+// Function to activate left indicator
 void left_indicator(void);
+
+// Function to activate right indicator LED
 void right_indicator(void); 
 
+// Function to trigger airbag indication/action
 void airbag_trigger(void);
