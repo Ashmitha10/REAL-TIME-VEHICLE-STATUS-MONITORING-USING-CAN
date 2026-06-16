@@ -1,8 +1,8 @@
-#ifndef I2C_H // Checks whether I2C_H is already defined or not
-#define I2C_H // Defines I2C_H to avoid multiple inclusion of this header file
+#ifndef I2C_H
+#define I2C_H 
 
 
-#include "types.h" // Includes user-defined data types like u8, u16, u32
+#include "types.h"
 // Function declaration to initialize the I2C peripheral
 void Init_i2c(void);
 
