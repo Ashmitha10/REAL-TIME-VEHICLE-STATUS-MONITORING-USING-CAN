@@ -66,6 +66,84 @@ This node is responsible for vehicle indications(left indicator/right indicator)
   
 --------------------------------------------------------
 
+# 📦 Project Modules
+
+## 🖥 LCD Module
+Displays:
+- Fuel percentage
+- Indicator status
+- Airbag status
+- Dashboard information
+
+---
+
+## 📟 ADC Module
+Reads fuel sensor value and converts it into fuel percentage.
+
+---
+
+## 📡 CAN Module
+Handles communication between nodes.
+
+### Operations:
+- Transmit data
+- Receive data
+- Frame formatting
+
+---
+
+## ⚡ Interrupt Module
+Handles external interrupts for:
+- Left indicator
+- Right indicator
+
+---
+
+## 🔌 I2C Module
+Used for communication with the MMA7660 accelerometer sensor.
+
+---
+
+## 📍 Accelerometer Module
+Reads X, Y, Z acceleration values and detects accidents.
+
+If acceleration exceeds threshold → Airbag is triggered.
+
+---
+
+# 📨 CAN Message Format
+
+| CAN ID | Data            | Description            |
+|-------|-----------------|------------------------|
+| 1     | Fuel Percentage | Sent from Fuel Node    |
+| 2     | 0x01            | Left Indicator         |
+| 2     | 0x02            | Right Indicator        |
+
+---
+
+# 🔄 Project Workflow
+
+1. Fuel node reads fuel value using ADC.
+2. Fuel percentage is calculated.
+3. Fuel data is transmitted to main node using CAN.
+4. Main node receives fuel data and displays it on LCD.
+5. External interrupt detects indicator button press.
+6. Indicator command is sent to indicator node via CAN.
+7. Indicator node receives command and activates LEDs.
+8. Accelerometer detects sudden movement.
+9. If crash detected → airbag status is displayed.
+
+---
+
+# 📊 Output
+
+The LCD dashboard displays:
+- Fuel percentage
+- Left/Right indicator status
+- Airbag activation status
+
+---
+
 ## ✨ Features
 - Real-time fuel monitoring
 - Accident detection using accelerometer
@@ -74,9 +152,50 @@ This node is responsible for vehicle indications(left indicator/right indicator)
 - Interrupt-driven indicator control
 - LCD display of vehicle parameters
 
+---
 
-## 🚘 Applications
-- Vehicle Safety Systems
-- Automotive Monitoring
-- Smart Transportation
-- Embedded CAN Networks
+# 💡 Applications
+
+- Automotive monitoring systems
+- Vehicle dashboard systems
+- Safety systems in vehicles
+- CAN-based embedded systems
+
+---
+
+# 🚀 Future Enhancements
+
+- Add GPS for real-time vehicle tracking
+- Integrate GSM module for accident alerts
+- Monitor additional parameters (temperature, tire pressure, battery)
+- Develop mobile/web dashboard for remote monitoring
+- Implement cloud or SD card data logging
+
+---
+
+# ✅ Conclusion
+
+This project demonstrates how CAN protocol enables reliable communication between multiple vehicle subsystems.
+
+The system improves:
+- Vehicle safety
+- Real-time monitoring
+- Efficient communication between nodes
+
+---
+
+# 👨‍💻 Author
+
+Korra Ashmitha
+Electronics and Communication Engineering  
+Developer of Real-Time Vehicle Status Monitoring Using CAN
+
+---
+
+# 📄 License
+
+This project is developed for academic and learning purposes.  
+You are free to modify and enhance it with proper credit.
+
+⭐ If you find this project useful, consider giving it a star on GitHub.
+
